@@ -5,12 +5,12 @@ import Settings from "./Settings";
 
 export default function board() {
   return (
-    <div className="flex flex-row ">
+    <div className="flex flex-col h-screen">
       <Counter />
-      <Counter />
-      <div className="m-5 flex flex-col justify-around items-center">
+      <div className="m-5 flex flex-row justify-around items-center">
         <Settings />
       </div>
+      <Counter />
     </div>
   );
 }
